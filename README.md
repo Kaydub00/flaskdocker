@@ -8,3 +8,10 @@ Needs a different deployment for production environments
     docker build -t my-flask-app .
     docker run -p 5000:5000 --rm --name running-my-flask-app my-flask-app
     
+Now you can try to send requests
+
+    curl localhost:5000/health
+    
+expected response
+
+    {"healthcheck":"ok"}
